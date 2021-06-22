@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class NotOrtalamasıHesaplayanProgram {
+public class main {
     public static void main(String[]args) {
         //değişkenler oluşturuldu
         int mat, fizik, kimya, turkce, tarih, muzik;
