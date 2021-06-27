@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class JavaProject1 {    
+public class main {    
     public static void main(String[] args) {
         // Scanner Sınıfı Tanımlandı.
          Scanner input = new Scanner(System.in);
