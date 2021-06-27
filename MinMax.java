@@ -1,30 +1,29 @@
 import java.util.Scanner;
 public class main {    
- 
-      public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
-         System.out.println("kac sayi girilecek"); int adim = sc.nextInt(); 
-        int maks=0,min=0;
-        
-        for (int i=1; i<=adim; i++)
-        {
-            System.out.println(i+". sayiyi giriniz: ");
-            int sayi = sc.nextInt();
-            
-            if (i==1)
-            {
-                maks=sayi;
-                min=sayi;
+        public static void main(String[] args) {
+        // Scanner Sınıfı tanımlandı.
+         Scanner input = new Scanner(System.in);
+         System.out.println("LÜTFEN SAYI ADEDİNİ YAZINIZ: "); 
+         int step = input.nextInt(); 
+        int max=0, min=0;
+        // For döngüsü.
+        for (int i=1; i<=step; i++) {
+            System.out.println(i +". LÜTFEN SAYIYI GİRİNİZ: ");
+            int number = input.nextInt();
+           // if yapısı. 
+            if (i==1) {
+                max=number;
+                min=number;
             }
             
-            if (sayi>maks)
-                maks=sayi;
+            if (number>max)
+                max=number;
             
-            if (sayi<min)
-                min=sayi;
+            if (number<min)
+                min=number;
         }
         
-        System.out.println("Maks: "+maks);
-        System.out.println("Min : "+min);
+        System.out.println("MAKSİMUM DEĞER: "+ max);
+        System.out.println("MİNİMUM DEĞER: "+ min);
     }
 }
