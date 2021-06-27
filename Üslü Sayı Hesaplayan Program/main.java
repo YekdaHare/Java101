@@ -17,10 +17,5 @@ public class main {
 	        }
 	    //Sonucun Ekrana Bastırılması.
         System.out.println("Sonuc: "+a);
-
-
-
 	}
-
-
 }
